@@ -1,10 +1,213 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>KerstenRon Hub</title>
-  </head>
-  <body>
-    <h1>KerstenRon Hub</h1>
-	<p>Sample Website for personal Hub</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Designer Portfolio – Alex Schmidt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <div>
+        <h1>Alex Schmidt</h1>
+        <p class="tagline">Game & Level Designer · Systems · Narrative</p>
+      </div>
+      <nav class="main-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- About -->
+    <section id="about" class="section section-about">
+      <div class="container about-layout">
+        <div class="about-text">
+          <h2>About the Designer</h2>
+          <p>
+            Alex is a game designer focused on level design, systemic mechanics,
+            and clearly communicated player goals. Projects range from compact
+            prototypes to vertical slices with fully playable builds.
+          </p>
+          <p>
+            The core interest is readable level flow, iterative prototyping,
+            and making design decisions backed by playtest data.
+          </p>
+        </div>
+        <div class="about-meta">
+          <h3>Key Skills</h3>
+          <ul>
+            <li>Level & encounter design</li>
+            <li>Systems & economy design</li>
+            <li>Rapid prototyping (Unity, Unreal)</li>
+            <li>Documentation & pitch decks</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section section-projects">
+      <div class="container">
+        <h2>Featured Projects</h2>
+
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-media">
+            <!-- Example: GIF or short gameplay video -->
+            <video src="media/ghostlines-gameplay.mp4" autoplay muted loop playsinline></video>
+            <div class="project-screenshots">
+              <img src="media/ghostlines-shot1.jpg" alt="Ghostlines Screenshot 1">
+              <img src="media/ghostlines-shot2.jpg" alt="Ghostlines Screenshot 2">
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Ghostlines</h3>
+            <p class="project-tagline">Isometric tactics-puzzle prototype about ghost trains and line of sight.</p>
+
+            <div class="project-meta">
+              <div>
+                <h4>Role</h4>
+                <p>Core game design, level design, enemy archetype balancing, paper prototyping.</p>
+              </div>
+              <div>
+                <h4>Design Goals</h4>
+                <ul>
+                  <li>Clear line-of-sight rules and stealth readability.</li>
+                  <li>Short levels with a strong “one more try” pull.</li>
+                  <li>Minimal UI, feedback mostly through animation and VFX.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <a class="btn-primary" href="https://yourname.itch.io/ghostlines" target="_blank" rel="noopener">
+                Play on itch.io
+              </a>
+              <a class="btn-ghost" href="https://yourname.itch.io/ghostlines" target="_blank" rel="noopener">
+                Open project page
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-media">
+            <!-- Example: animated GIF as teaser -->
+            <img src="media/skybound-gif.gif" alt="Skybound City GIF" class="project-gif">
+            <div class="project-screenshots">
+              <img src="media/skybound-shot1.jpg" alt="Skybound City Screenshot 1">
+              <img src="media/skybound-shot2.jpg" alt="Skybound City Screenshot 2">
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Skybound City</h3>
+            <p class="project-tagline">Cozy city builder on floating islands with system-driven gameplay.</p>
+
+            <div class="project-meta">
+              <div>
+                <h4>Role</h4>
+                <p>Systems design, economy design, UX flows, telemetry review from playtests.</p>
+              </div>
+              <div>
+                <h4>Design Goals</h4>
+                <ul>
+                  <li>Interlocking production chains without overwhelming new players.</li>
+                  <li>Smooth progression driven by soft gates instead of hard walls.</li>
+                  <li>Emotional attachment via resident stories and micro-events.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <a class="btn-primary" href="https://yourname.itch.io/skybound-city" target="_blank" rel="noopener">
+                Download demo on itch.io
+              </a>
+              <a class="btn-ghost" href="https://yourname.itch.io/skybound-city" target="_blank" rel="noopener">
+                Read design breakdown
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-media">
+            <!-- Example: embedded YouTube trailer -->
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID"
+              title="Bossloop Trailer"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+            <div class="project-screenshots">
+              <img src="media/bossloop-shot1.jpg" alt="Bossloop Screenshot 1">
+              <img src="media/bossloop-shot2.jpg" alt="Bossloop Screenshot 2">
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Bossloop</h3>
+            <p class="project-tagline">Roguelite boss rush that treats every attempt as a learning loop.</p>
+
+            <div class="project-meta">
+              <div>
+                <h4>Role</h4>
+                <p>Combat design, boss patterns, input feel, difficulty curves, onboarding.</p>
+              </div>
+              <div>
+                <h4>Design Goals</h4>
+                <ul>
+                  <li>“Fair but tough” difficulty with highly readable attacks.</li>
+                  <li>Short runs with deep meta progression.</li>
+                  <li>Strong game feel for dodge, parry, and special moves.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <a class="btn-primary" href="https://yourname.itch.io/bossloop" target="_blank" rel="noopener">
+                Play in browser on itch.io
+              </a>
+              <a class="btn-ghost" href="https://yourname.itch.io/bossloop" target="_blank" rel="noopener">
+                More info
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-contact">
+      <div class="container contact-layout">
+        <div>
+          <h2>Contact</h2>
+          <p>For inquiries about freelance work, full-time positions, or collaborations:</p>
+          <ul class="contact-list">
+            <li><span>Email:</span> <a href="mailto:alex.gamedesign@example.com">alex.gamedesign@example.com</a></li>
+            <li><span>LinkedIn:</span> <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener">linkedin.com/in/yourprofile</a></li>
+            <li><span>itch.io:</span> <a href="https://yourname.itch.io" target="_blank" rel="noopener">yourname.itch.io</a></li>
+            <li><span>Twitter:</span> <a href="https://x.com/yourhandle" target="_blank" rel="noopener">@yourhandle</a></li>
+          </ul>
+        </div>
+        <div class="contact-note">
+          <h3>Availability</h3>
+          <p>Open to remote and hybrid work within European time zones.</p>
+          <p>Detailed CV and references available on request.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Alex Schmidt · Game Design Portfolio</p>
+    </div>
+  </footer>
+</body>
 </html>
