@@ -319,6 +319,11 @@ body {
   touch-action: manipulation;
 }
 
+a.button-82-pushable {
+  display: block;
+  width: 180px
+}
+
 .button-82-shadow {
   position: absolute;
   top: 0;
